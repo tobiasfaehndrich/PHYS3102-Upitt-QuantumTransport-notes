@@ -1,0 +1,61 @@
+\section[Technology]{\hyperlink{toc}{Technology}}
+
+\begin{itemize}
+    \item Crystal growth (normally done out of house, so that we ensure it is high quality) $\rightarrow$ nanofabrication (normally done in house because no one wants to do it for you)$\rightarrow$ Low-T electrical measurements (science!)
+    \item Molecular Beam Epitaxy (MBE): 
+    \begin{itemize}
+        \item MBE is performed in an ultra-high vacuum (UHV) chamber.
+        \item A heat source evaporates pure elements, which then condense on a heated substrate.
+        \item Atoms self-assemble into crystalline layers.
+        \item The process involves ballistic (of atoms) deposition (molecular flow).
+        \item Temperature is a critical parameter.
+        \item Effusion cells are used to carry very pure elements (like Gallium, Arsenic, Aluminum, Indium).
+        \item A RHEED (reflection high energy electron diffraction) gun reflects electrons off the surface and reads the pattern with a sensor to monitor growth in real time. Signal oscillates, intensity determined by surface roughness.
+    \end{itemize}
+
+    \item Metal Organic Vapor Phase Epitaxy (MOVPE) (or MOCVD):
+    \begin{itemize}
+        \item Temperature usually 600-1200C
+        \item Uses metal-organic precursors (like trimethylgallium, triethylgallium, arsine, phosphine) that decompose on the hot substrate to deposit the desired elements (i.e. organics leave and leave semiconductor elements behind).
+        \item Used to make nanowires
+    \end{itemize}
+
+    \item Pulsed Laser Deposition (PLD):
+    \begin{itemize}
+        \item UHV chamber with window
+        \item laser shoots at target material, ablates material which deposits on substrate
+        \item used to make complex oxides (LAO), HTSCs (YBCO, BSCO etc.), and also semiconductors
+    \end{itemize}
+    \item nanofabrication: pattern definition (photolithography, Electron beam lithography, and nano imprint lithography), Thin film deposition (evaporation, sputtering using plasma), Etching (chemical etching -- wet and dry, Ion milling)
+    \begin{figure}[h]
+        \includegraphics[width = 0.5 \linewidth]{photo-lithography.png}
+        \centering
+        \caption{photolithography process}
+    \end{figure}
+
+    \item Excimer Laser Stepper: resolution is around 65nm, can make smaller features possible, fast, very expensive.
+    \item Stamping nanostructures: PDSM stamp, nanoimprint, step and flash imprint lithography (around 22nm resolution accross large area, fast, need master, overlay is difficult).
+    \item Electron Beam Lithography (EBL): a pattern generator to SEM (beam is scanned across surface), very high resolution (sub 10nm), slow, serial process, need conductive substrate or coating. Several million dollars.
+    \item Focused Ion Beam (FIB): use atoms like Ga, to mill away material. Pretty similar properties to EBL.
+
+    \item Nanofabrication journey:
+    \begin{itemize}
+        \item you dont get unlimited good semiconductor wafers
+        \item find defects and figure out if you can avoid them in your device design.
+        \item practice with just GaAs at first without the 2DEG
+    \end{itemize}
+    \item Low-T technology:
+    \begin{itemize}
+        \item Liquid helium 4 at 4.2K (bath cryostat).
+        \item Pumped helium 4 -- 1.5K (note that superfluid transition is at 2.17K).
+        \item Helium 3 -- 0.3K (expensive, rare, hard to handle)
+        \item Dilution Refrigerator (mix of helium 3 and helium 4) -- 0.01K
+        \item Adiabatic demagnetization refrigerator -- 0.001K, use solids and apply magnetic fields to cool down (entropy increases, temperature goes down), no helium 3 required.
+    \end{itemize}
+    \item Cooling electrons down: electron temperature is not the same thing as the lattice temperature (phonons) i.e. the temp of the fridge. 
+    \begin{itemize}
+        \item Let electrons have time to cool down by wrapping wires around stages of fridge. Electron-phonon coupling. Add resistor to cool down electrons.
+        \item Need to filter out high frequency noise (RF) from room temperature electronics. Use RC filters, copper powder filters, pi-filters, etc.
+    \end{itemize}
+\end{itemize}
+

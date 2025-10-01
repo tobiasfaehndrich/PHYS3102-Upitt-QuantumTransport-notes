@@ -1,0 +1,98 @@
+\section[Energy and Length Scales]{\hyperlink{toc}{Energy and Length Scales}}
+
+
+Charging energy (associated with one electron) $E_C = \frac{e^2}{2C}$
+\begin{itemize}
+    \item Capacitance of a sphere of radius R: $C = 4 \pi \epsilon_0 R$.
+    \item What is the energy needed to charge the sphere with one electron?
+    \begin{align*}
+    \begin{tabular}{c|c|c}
+        Radius R & Capacitance C & Charging Energy $E/k_B$ \\
+        \hline
+        $ 10 \mu m$ & $10^{-15}\ \mathrm{F}$ & $0.84\ \mathrm{K}$ \\
+        $ 1 \mu m$ & $10^{-16}\ \mathrm{F}$ & $8.4\ \mathrm{K}$ \\
+        $ 0.1 \mu m$ & $10^{-17}\ \mathrm{F}$ & $84\ \mathrm{K}$ \\
+        $ 0.01 \mu m$ & $10^{-18}\ \mathrm{F}$ & $840\ \mathrm{K}$ \\
+    \end{tabular}
+    \end{align*}
+\end{itemize}
+
+
+Overview energy scales:
+
+\begin{itemize}
+    \item $k_B T$: thermal energy scale at room temp is 26 meV
+    \item eV: energy an electron gains when crossing a potential difference V
+    \item $\mu$ chemical potential the energy required to add one particle to the system
+    \item $\mu_B B$: Zeeman energy of an electron in a magnetic field B
+    \item $E_F$: Fermi energy (it is the energy of the highest occupied electron state); for metals it is on the order of a few eV. For semiconductors it can be much smaller.
+    \item $\Delta E$: level spacing, energy difference between single-particle states calculated from the Schrödinger equation
+    \item $E_C$: charging energy (more on this when we cover coulomb blockade)
+    \item $E_T$: Thouless energy the energy scale of coherence effects 
+\end{itemize}
+
+
+Length scales (quantum regime):
+\begin{itemize}
+    \item for mesescopic and nanoscale structures: device dimensions are comparable to the fundamental size of electron. This causes their properties to be influenced by quantum mechanical effects.
+    \item size of electron is essentially given by fermi wavelength $\lambda_F$ 
+    \begin{itemize}
+        \item in most metals, electron density is very large ($10^{21} \mathrm{cm}^{-3}$), and fermi is thus order of a few nanometers.
+        \item in semiconductors, lower carrier density ($\ll 10^{21} \mathrm{cm}^{-3}$) and thus larger fermi wavelength of several tens of nanometers.
+    \end{itemize}
+
+    \item Bloch's theorem says that electrons in a perfect crystal lattice will oscillate without scattering.
+    \item scattering happens in real materials. electrons scatter from any disorder, such as defects and impurities but also from other electrons and phonons.
+    \item Golden rule in Quantum mechanics says scattering from static potential does not change the energy of the electrons, so scattering off fixed impurity is elastic, and scattering off phonons or other electrons is inelastic.
+    \item elastic and inelastic scattering length scales are material and temperature dependent.
+    \item mean free path $l$ is the average distance an electron travels between scattering events (correlation between initial and final momentum is lost -- randomization).
+    \[   l = v_F \tau \]
+    when $\tau$ is the mean free time between scattering events.
+    \item Mobility: $\mu = \frac{e \tau}{m}$ where $\tau$ is the mean free time between scattering events.
+    \item Conductivity: $\sigma = \frac{n e^2 \tau}{m} = n e \mu$
+    \item 2D diffusion constant $D = \frac{v_F^2 \tau}{2} $
+    \item 1D diffusion constant $D = v_F^2 \tau $
+    \item There exists an elastic mean free path, and an inelastic mean free path.
+    \item Coherent vs incoherent transport:
+    \begin{itemize}
+        \item disruption of interference effects from electron phase breaking time $\tau_\phi$ (often dont distinguish from inelastic scattering time $\tau_i$ but they are not the same because inelastic scattering does not always cause phase breaking).
+        \item phase coherence length $L_\phi = \sqrt{D \tau_\phi}$, is avg distance electrons diffuse in the material before their phase is disrupted through scattering.
+        \item To observe interference effects, this length must be comparable to device size which requires experiments be performed at low temperatures (to reduce phonon scattering).
+    \end{itemize}
+    \item phase coherence for a small loop of wire at low temperatures with an applied magnetic field can lead to Aharonov-Bohm oscillations in the conductance of the loop as a function of magnetic field. If you make the loop bigger then 100 microns you will not see the oscillations because the phase coherence length is too small.
+    \item transport regimes: since submicron structure can be fabricated on length sclaes smaller than the average impurity spacing in semiconductors, we can study different transport regimes:
+    \begin{itemize}
+        \item Diffusive transport: electrons scatter multiple times off impurities, phonons, other electrons, etc. Mean free path $l$ much smaller than device length $L$ ($l \ll L$)
+        \item Quasi-ballistic transport: electrons scatter a few times, $l \sim L$
+        \item Ballistic transport: electrons travel through the device without scattering, $l \gg L$
+    \end{itemize}
+    \item When is transport diffusive/ballistic and classical/quantum?
+    \begin{itemize}
+        \item diffusive and classical: $\lambda_F, l_i, l_e \ll L$
+        \item diffusive and quantum: $\lambda_F, l_e \ll L, l_i$
+        \item ballistic and classical: $\lambda_F \ll L < l_e, l_i$
+        \item ballistic and quantum: $\lambda_F , L < l_e < l_i$
+    \end{itemize}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.6 \linewidth]{transport-lengths-scattering.png}
+        \caption{Different length scales relevant for electron transport in a conductor. The Fermi wavelength $\lambda_F$ characterizes the quantum nature of electrons, while the mean free path $l$ indicates the average distance an electron travels between scattering events. The phase coherence length $L_\phi$ represents the distance over which an electron maintains its quantum phase coherence, crucial for observing quantum interference effects.}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.6 \linewidth]{energy-length-relations-and-scales.png}
+    \end{figure}
+
+    \item Current-voltage characteristics: Superconductor-Insulator-Superconductor (SIS) junction (josephson junction): different than ohms law!
+    \begin{itemize}
+        \item Current biased: as we increase I, voltage V across junction remains zero until I reaches critical current $I_c$ at which point V jumps to a finite value and then increases linearly with I.
+        \item Voltage biased: as we increase V, current I across junction remains zero until V reaches critical voltage $V_c$ at which point I jumps to a finite value and then increases linearly with V.
+    \end{itemize}
+
+    \item Cronnenwett et al. 2002 (\href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.88.226805}{[Online]}) Quantum point contact "waterfall plot" $\rightarrow$ conductance quantization.
+    \item Ono et al. 2002 (\href{https://www.science.org/doi/abs/10.1126/science.1070958}{[Online]}) Spin blockade in a quantum dot. non-symmetric current-voltage characteristics due to pauli exclusion principle.
+\end{itemize}
+
+

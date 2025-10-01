@@ -1,0 +1,35 @@
+\section[Ballistic Transport]{\hyperlink{toc}{Ballistic Transport}}
+
+\begin{itemize}
+    \item Diffusive transport: electrons scatter multiple times off impurities, phonons, other electrons, etc. Mean free path $l$ much smaller than device length $L$ ($l \ll L$)
+    \item Quasi-ballistic transport: electrons scatter a few times, $l \sim L$
+\end{itemize}
+
+
+\begin{itemize}
+    \item The Drude model describes diffusive transport, based on the free electron gas picture. Electrical resistance comes from scattering (information is lost when scattering).
+    \item This gives us equation for velocity of electron in an electric field and mobility of electron, and conductivity.
+    \[ \vec{v}_d = -\frac{e \vec{E} \tau}{m} \]
+    \[ \mu_d = \frac{e \tau}{m} \]
+    \[ \sigma = \frac{n e^2 \tau}{m} = n e \mu_d \]
+    \item Einstein relation: electrons near $E_F$ diffuse due to density gradient.
+    
+    \item Ohms law and drude model are in diffusive regime
+    \item In the ballistic regime, electrons travel through the device without scattering. The resistance comes from the contacts (interfaces) to the device, not from within the device itself.
+    \item With non-local measurement (voltage is not measured along the current path to electrical ground) you can measure electron focussing in a magnetic field (famous non-local measurement is quantum hall effect).
+    \item Split gate hetero structure in 2DEG GaAs/AlGaAs, apply negative voltage to deplete 2DEG under gates and create a narrow constriction (quantum point contact, QPC). When you make the constriction narrow enough you get quantized conductance in units of $G_0 = \frac{2e^2}{h}$.
+    
+
+    \item Constricts to 1D transport, so electrons can only move forward or backward. The conductance is given by the Landauer-Buttiker formula.
+
+    \item QPC are not perfect, if you increase temp the plateaus get washed away. For finite temp we must consider a finite occupation of the energy levels. 
+
+    \item The width of the derivative of the fermi function is $\sim 3.5 k_B T$. If $3.5 k_B T$ is comparable to the sub-band spacing then the plateaus get washed out.
+    \item Transmission resonance can also wash out the plateaus. 
+    \item Reflection can be from impurities or Backscattering from abrupt constriction at QPC. Tapered/smooth and short potential constriction is better for transmission closer to $T=1$ and $R=0$.
+    \item Can measure in nanowires also but you need very high magnetic fields to see quantized conductance.
+    \item Perpendicular magnetic field also makes plateaus more stretched out in gate voltage.
+    \item Parallel magnetic field splits spin degeneracy and you get $1e^2/h$ plateaus.
+    \item 
+
+\end{itemize}

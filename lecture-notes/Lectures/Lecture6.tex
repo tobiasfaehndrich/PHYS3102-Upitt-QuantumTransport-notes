@@ -1,0 +1,37 @@
+\section[Quantum Point Contacts II]{\hyperlink{toc}{Quantum Point Contacts II}}
+
+
+\begin{itemize}
+    \item GaAs/AlGaAs heterostructure has electrons that are confined to a 2D layer in the interface between the two materials. The electrons can move freely in the 2D plane but are confined in the third dimension. These electroncs have very high mobility! with mean free path around 25 microns.
+    \item Use gates to apply electric fields to deplete the 2DEG under the gates and create a narrow constriction (quantum point contact, QPC). When you make the constriction narrow enough you get quantized conductance.
+    \item These are modes in the solution to the Schrodinger equation in the constriction. Each mode contributes $2e^2/h$ to the conductance (factor of 2 from spin degeneracy).
+    \item First two papers on this topic are from \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.60.848}{van Wees et al.} and \href{https://iopscience.iop.org/article/10.1088/0022-3719/21/8/002}{Wharam et al.} in 1988.
+    \item See also \href{https://apps.dtic.mil/sti/tr/pdf/AD1005432.pdf}{Sara Cronenwett PhD thesis} for more interesting plots like the waterfall plot.
+    \item It shows conductance plateaus which become spin resolved if you apply a magnetic field.
+    \item At 0 B you can also get 1/2 plateaus with high bias (but this is not spin-resolved).
+    \item  0.7 or 0.8 plateaus have been debated over for several decades. Likely from interaction effects. When you apply large field it goes to 0.5 plateau.
+    \item Adiabatic Quantum Transport: Many modes, some closed some open. Smoothly varying potential. No scattering between modes. This is called the Landauer Buttiker formulism of Quantum Transport.
+    \item Transmission and Reflection of modes.
+    \item Incoming amplitudes $\vec{a}$ and outgoing amplitudes $\vec{b}$. 
+    
+    \[ \vec{b} = \hat{s} \vec{a} \]
+
+    \[ \boxed{\begin{bmatrix} 
+        \vec{b}_L \\ \vec{b}_R 
+    \end{bmatrix} = \begin{bmatrix}
+        \hat{r} & \hat{t}' \\
+        \hat{t} & \hat{r}'
+    \end{bmatrix} \begin{bmatrix}
+        \vec{a}_L \\ \vec{a}_R
+    \end{bmatrix}} \]
+
+    \item Unitarity of S-matrix: $\hat{s}^\dagger \hat{s} = \hat{I}$. Express conservation of the number of particles.
+    \item Fundamental relation is also the Onsager Relation, for symmetry with respect to the time reversal:
+    \[ s_{\alpha n;\beta m}(B) = s_{\beta m;\alpha n}(-B) \]
+    \item You can inject a 2DEG by adding electrons to surface of liquid helium. Lower density electrons, less screening, much stronger Coulomb interactions. If you lower the temperature enough you can get a Wigner crystal (held together in crystal lattice form by Coulomb repulsion). Harder to create quantum confinment because these are real electrons (not effective) here have larger mass of 1 (compared to GaAs 2DEG electrons of 0.067) and thus much smaller wavelength.
+    \item Groups have tried to make QPCs in this system but it is very challenging.
+    \item Spin effects of QPCs, apply magnetic field in plane (no orbital effects), adds Zeeman energy to electrons in the 2DEG. Extra plateaus show in conductance at 0.5, 1.5, 2.5, etc. $2e^2/h$.
+    \item The factor of 2 normally comes from spin degeneracy. The magnetic field breaks this degeneracy and splits the modes.
+    \item Gate voltage at odd integer multiples of $e^2/h$ only allows electrons with spins oriented along the field to go through the QPC. This is a spin filter (or injector)!
+    \item Non local spin valve: inject spins at one QPC and detect them at another QPC. 
+\end{itemize}

@@ -1,0 +1,105 @@
+\section[Materials for Quantum Transport]{\hyperlink{toc}{Materials for Quantum Transport}}
+
+\begin{itemize}
+    \item 2D Electron Gas (2DEG): 
+    \begin{itemize} 
+        \item Came from industry that was needing faster/smaller devices (note they have large mean free paths i.e. small number of impurities, and high electron mobility).
+        \item Often in semiconductor heterostructures, formed at interface. 
+        \item Also in Metal-oxide-semiconductor (MOS) structures.
+        \item Materials are very well matched at interface so there are few defects.
+        \item To fill 2DEG you can either apply gate voltage or use doping.
+        \item Electron mobility goes up as temperature goes down (less phonon scattering).
+    \end{itemize}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{2deg-band.jpg}
+        \caption{2DEG in a semiconductor heterostructure.}
+        \label{fig:2DEG}
+    \end{figure}
+
+    \item Place metal on surface and then heat it up (anneal) so that it diffuses through the semiconductor and creates a contact to the 2DEG.
+    \item To make quantum dots we have metals on surface that we apply (very negative) voltage to (gates) to locally deplete the 2DEG.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{quantum-transport-device-example.png}
+        \caption{Example quantum transport device using a 2DEG.}
+        \label{fig:quantum-transport-device}
+    \end{figure}
+
+    \item Metallic or semiconductor nanowires (1D systems):
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{vls-nanowire.png}
+        \caption{VLS grown nanowire process.}
+        \label{fig:nanowire}
+    \end{figure}
+
+    \item Semiconducting quantum dots (0D systems):
+    \begin{itemize}
+        \item electron motion strongly confined in all 3 dimensions.
+        \item quantization so that these are like artificial atoms.
+        \item can be made in 2DEG by applying voltages to gates.
+        \item dominant transport is single electron tunneling.
+        \item can also be by pillars etched out of 2deg and also self-assembled (strained induced) InAs dots.
+    \end{itemize}
+
+    \item Metallic clusters \& semiconductor dots (0D): made by chemists, synthesized in solution and can make different sizes that can emit different colors.
+    \item Single molecules and chains of atoms: two electrodes placed with tiny gap and then deposit molecules and some will bridge the gap.
+    \item Carbon base material-systems: fullerenes (1985, 0D "buckyballs"), carbon nanotubes (1991, 1D), graphene (2004, 2D).
+
+    \item Free electrons in three dimensions:
+    
+    \begin{itemize}
+        \item Schrodinger equation: $-\frac{\hbar^2}{2m}\nabla^2\psi = E\psi$.
+        \item The eigenstates are: $\psi_{\vec{k}}(\vec{r}) = \frac{1}{(2 \pi)^3} e^{i \vec{k} \cdot \vec{r}}$ with $\vec{k} = (k_x, k_y, k_z)$.
+        \item The energy eigenvalues are: $E_{\vec{k}} = \frac{\hbar^2 \vec{k}^2}{2m} = \frac{\hbar^2}{2m}(k_x^2, k_y^2, k_z^2)$.
+        \item The unitary volume of the state in k-space is $(2\pi)^3$.
+        \item \item The number of states in a 3D k-space volume $d \vec{k} = dk_x dk_y dk_z$ is given by:
+        
+        \[ g(\vec{k}) d\vec{k} = \frac{2}{(2\pi)^3} d\vec{k} \]
+        
+        where the factor of 2 is for spin degeneracy.
+        
+        \item $d\vec{k}$ can be written as:
+        \[ d\vec{k} = \frac{4}{3} \pi ((k+dk)^3 - k^3) = 4 \pi k^2 dk \]
+
+        leading to:
+
+        \[ g(\vec{k}) d\vec{k} = \frac{1}{\pi^2} k^2 dk \]
+    
+        \item By calculating $k^2$ and $dk/dE$:
+        \[ k^2 = \frac{2mE}{\hbar^2} \quad , \quad \frac{dk}{dE} = \sqrt{\frac{2m}{E \hbar^2}} \frac{1}{2}\]
+
+        \[ \frac{1}{\pi^2} k^2 dk = \frac{1}{\pi^2} \left( \frac{2mE}{\hbar^2} \right) \frac{dk}{dE} dE = \frac{1}{2\pi^2} \left( \frac{2m}{\hbar^2} \right)^{3/2} \sqrt{E} dE \]
+
+        \item Which is the density of states in 3D for free electrons:
+
+        \[ \boxed{g(E) = \frac{1}{2\pi^2} \left( \frac{2m}{\hbar^2} \right)^{3/2} \sqrt{E}} \]
+
+    \end{itemize}
+
+    \item Can also do this for 2D and 1D and 0D systems:
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{dos.png}
+        \caption{Density of states in different dimensions.}
+        \label{fig:dos-dimensions}
+    \end{figure}
+
+    \item Band strucutre and symmetry points
+    \item Direct vs indirect band gaps
+    \begin{itemize}
+        \item Wider bands are heavier effective mass
+        \item Narrower bands are lighter effective mass
+    \end{itemize}
+
+
+    \item Bands vs sub-bands: sub bands based on excited states in quantum wells (not in 3D bulk material)
+    
+    \item Newish quantum transport materials: Bi2Se3 topological insulator
+
+    \item MoS2 (transition metal dichalcogenides)
+    \item LAO/STO (lanthanum aluminate/strontium titanate)
+\end{itemize}
