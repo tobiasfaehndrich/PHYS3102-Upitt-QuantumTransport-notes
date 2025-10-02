@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758929031.91125 "c:/Users/tobia/Documents/ubc-grad/PHYS3102-Upitt-QuantumTransport-notes/lecture-notes/notes.tex" "notes.pdf" "notes" 1758929036.78534 0
+["pdflatex"] 1759422718.93933 "c:/Users/tobia/Documents/ubc-grad/PHYS3102-Upitt-QuantumTransport-notes/lecture-notes/notes.tex" "notes.pdf" "notes" 1759422730.43657 0
   "../Images/2deg-band.jpg" 1758135726 66835 5f0d0f146350d5ae08113ff9a853de72 ""
   "../Images/aharonov-bohm-effect.png" 1757362782 85831 0db0a3813d6512e93a40b0854fa784fa ""
   "../Images/charge-stability-coulomb-diamonds.png" 1758920416 834839 d84ce6c9dcd21d6d48265fef7110d085 ""
@@ -14,7 +14,7 @@
   "../Images/taxonomy.png" 1757358320 166962 4d4c89dc8c4946cff5a2928e00e43e66 ""
   "../Images/transport-lengths-scattering.png" 1757979725 152770 78e9c2e67fb4b96e7241e39e8eae2866 ""
   "../Images/vls-nanowire.png" 1758138278 1214431 43fc7f4de25bdd9e87c9346040a6e22d ""
-  "C:/Users/tobia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758774698 82507 a9eef8696c92627b87e9975edea03b2a ""
+  "C:/Users/tobia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759099314 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/tobia/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1757353308 24225045 1014c6b623267c33c846c48b7a2205d1 ""
   "C:/Users/tobia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/tobia/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136801054 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -252,13 +252,13 @@
   "Lectures/Lecture4.tex" 1758055604 4244 7ad8d2b4637c088e05604da7d03cb521 ""
   "Lectures/Lecture5.tex" 1758306713 2746 d936aec561cbb69223f0d8b653ae1a6b ""
   "Lectures/Lecture6.tex" 1758565755 3628 f8202f97b94f175af18e6487d1e4d911 ""
-  "Lectures/Lecture7.tex" 1758929030 6331 9254dc24c2cb5d869bc03660d3917af5 ""
+  "Lectures/Lecture7.tex" 1759422715 9705 715f02470dd4836ff9318e416bd8cb94 ""
   "c:/Users/tobia/Documents/ubc-grad/PHYS3102-Upitt-QuantumTransport-notes/lecture-notes/notes.tex" 1758565799 934 87c894bf1dc7e3b477b9d492ddd233f4 ""
   "commands.sty" 1757975356 3664 b0dc63b6a2c3cbadbd6a1a2fcce8f8ee ""
-  "notes.aux" 1758929036 3906 54f52f149adf8b5b62771dfb6cb8ec7a "pdflatex"
-  "notes.out" 1758929036 1019 78e1d3b39d921fa0545f81c4d2a8e2f5 "pdflatex"
+  "notes.aux" 1759422729 3906 169157cef3dbab6f17050b2713051b89 "pdflatex"
+  "notes.out" 1759422729 1019 78e1d3b39d921fa0545f81c4d2a8e2f5 "pdflatex"
   "notes.tex" 1758565799 934 87c894bf1dc7e3b477b9d492ddd233f4 ""
-  "notes.toc" 1758929036 554 a7aca422e71e4d3ba452e4811bb3e0cd "pdflatex"
+  "notes.toc" 1759422729 554 a7aca422e71e4d3ba452e4811bb3e0cd "pdflatex"
   (generated)
   "notes.aux"
   "notes.log"

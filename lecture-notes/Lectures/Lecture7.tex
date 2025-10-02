@@ -6,80 +6,80 @@
     \item Occur in bulk metal.
     \item charge quantization effects only observable in small volume well separated from its environment.
     \item The total capacitance of the island (to the ground, leads, etc):
-    \[ C_{\Sigma} = C + C_{\text{self}} + C_{\text{res}} \]
+          \[ C_{\Sigma} = C + C_{\text{self}} + C_{\text{res}} \]
     \item With isolated island: charge is quantized, $Q = ne$.
     \item Energy to add an electron to the island:
-    \[ E = E_c n^2 \]
-    \[ E_c = \frac{e^2}{2C_{\Sigma}} \]
+          \[ E = E_c n^2 \]
+          \[ E_c = \frac{e^2}{2C_{\Sigma}} \]
     \item If charging energy is not available from external voltage sources, T, etc, then transport is blocked.
     \item Capacitances: isolated sphere $C = \epsilon_0 \epsilon_r 2 \pi d$, isolated disk $C = \epsilon_0 \epsilon_r 4 d$, parallel plate $C = \epsilon_0 \epsilon_r A/d$, nanotube with diameter, r, above a ground place at distance h $C = \frac{2 \pi \epsilon_0 \epsilon_r L}{\ln(2h/r)}$.
     \item Quick estimate: for capacitance per unit length $C' = \epsilon_0 \epsilon_r = \epsilon_r 10 \text{aF/um}$
     \item Mesoscopic systems, typically C in 1-100 fF range. Ec in 0.5-50meV range.
     \item What is the energy needed to charge the sphere with one electron? Energy of charged capacitor: $E = qV/2 = q^2/2C$
-        
-    \begin{center}
-    \begin{tabular}{|c|c|c|c|}
-    \hline
-    R & C & $E/k_B$ & $E$ \\
-    \hline
-    10 $\mu$m & $1.1 \times 10^{-15}$ F & 0.84 K ($^3$He) & 70 $\mu$eV \\
-    \hline
-    1 $\mu$m & $1.1 \times 10^{-16}$ F & 8.4 K (LHe) & 0.7 meV \\
-    \hline
-    0.1 $\mu$m & $1.1 \times 10^{-17}$ F & 84 K (LN$_2$) & 7 meV \\
-    \hline
-    0.01 $\mu$m & $1.1 \times 10^{-18}$ F & 840 K (spg) & 70 meV \\
-    \hline
-    \end{tabular}
-    \end{center}
+
+          \begin{center}
+              \begin{tabular}{|c|c|c|c|}
+                  \hline
+                  R           & C                       & $E/k_B$         & $E$        \\
+                  \hline
+                  10 $\mu$m   & $1.1 \times 10^{-15}$ F & 0.84 K ($^3$He) & 70 $\mu$eV \\
+                  \hline
+                  1 $\mu$m    & $1.1 \times 10^{-16}$ F & 8.4 K (LHe)     & 0.7 meV    \\
+                  \hline
+                  0.1 $\mu$m  & $1.1 \times 10^{-17}$ F & 84 K (LN$_2$)   & 7 meV      \\
+                  \hline
+                  0.01 $\mu$m & $1.1 \times 10^{-18}$ F & 840 K (spg)     & 70 meV     \\
+                  \hline
+              \end{tabular}
+          \end{center}
 
     \item Need $E_c > kT$ in order to observe charging effects.
     \item Conditions for observing Coulomb blockade:
-    \begin{itemize}
-        \item $\Delta t = RC$ is typical time to charge the island, then Heisenberg uncertainty relation: $\Delta E \Delta t = (e^2/C) RC > \hbar$
-        \item $R \gg \frac{\hbar}{e^2} \approx 25.8 k\Omega$
-        \item Requirement on temperature/voltage: $kT, eV < E_c$
-        \item Typical experimental setup: quantum dot connected to source and drain via tunnel barriers, capacitively coupled to gate.
-    \end{itemize}
+          \begin{itemize}
+              \item $\Delta t = RC$ is typical time to charge the island, then Heisenberg uncertainty relation: $\Delta E \Delta t = (e^2/C) RC > \hbar$
+              \item $R \gg \frac{\hbar}{e^2} \approx 25.8 k\Omega$
+              \item Requirement on temperature/voltage: $kT, eV < E_c$
+              \item Typical experimental setup: quantum dot connected to source and drain via tunnel barriers, capacitively coupled to gate.
+          \end{itemize}
     \item Tunnel Junction: two conductors separated by thin insulator. Electrons can tunnel through the insulator. Ohms law does not apply.
     \item Island: single electron box, constant interaction model. no current flows. island potential is given by charge on island plus induced charge from gate.
     \item We can add electroncs one by one to a single electron box by changing the gate voltage.
-    \item Double barrier circuit: single electron transistor (SET). 
+    \item Double barrier circuit: single electron transistor (SET).
     \item Chemical potential is the energy an electrons needs to have in order to enter the system. $\mu(N) = U(N) - U(N-1) = (N-1/2) e^2/C - eV_{\text{ext}}$.
     \item Current flows if a dot chemical potential lies inside the bias window (window between source and drain chemical potentials).
-    
-    \begin{figure*}[h!]
-        \centering
-        \includegraphics[width=0.4\textwidth]{../Images/coulomb-blockade.jpg}
-        \caption{Coulomb blockade.}
-    \end{figure*}
+
+          \begin{figure*}[h!]
+              \centering
+              \includegraphics[width=0.4\textwidth]{../Images/coulomb-blockade.jpg}
+              \caption{Coulomb blockade.}
+          \end{figure*}
 
     \item First measurements of the Coulomb Effect: I. Giaever and H.R. Zeller, Phys. Rev. Lett. 20, 1504 (1968).
     \item 20 years later: Observation of Single-Electron Charging Effects in Small Junction by T.A. Fulton and G.J. Dolan, Phys. Rev. Lett. 59, 109 (1987).
     \item Aside: Shadow Evaporation: (last lecture 2DEG and apply gates to apply potential barriers). But in metals, we can use shadow evaporation to create small tunnel junctions.
     \item This technique is used for SETs, SQUIDs, Quantum Dots with tunnel barriers, other devices with small tunnel junctions.
     \item Steps:
-    \begin{itemize}
-        \item Evaporate metal onto insulator.
-        \item Apply resist mask with undercut.
-        \item Evaporate metal at angle 1.
-        \item Oxidize to form tunnel barrier.
-        \item Evaporate metal at angle 2.
-        \item Lift off resist.
-        \item Result: two metal layers separated by thin oxide layer.
-    \end{itemize}
-    \begin{figure*}[h!]
-        \centering
-        \includegraphics[width=0.6\textwidth]{../Images/shadow-evaporation.png}
-        \caption{Shadow evaporation.}
-    \end{figure*}
+          \begin{itemize}
+              \item Evaporate metal onto insulator.
+              \item Apply resist mask with undercut.
+              \item Evaporate metal at angle 1.
+              \item Oxidize to form tunnel barrier.
+              \item Evaporate metal at angle 2.
+              \item Lift off resist.
+              \item Result: two metal layers separated by thin oxide layer.
+          \end{itemize}
+          \begin{figure*}[h!]
+              \centering
+              \includegraphics[width=0.6\textwidth]{../Images/shadow-evaporation.png}
+              \caption{Shadow evaporation.}
+          \end{figure*}
 
     \item Coulomb diamonds: the lines define a region in which there is no current. This region is called the coulomb diamond. At zero bias, current flows at the blue degeneract points.
-    \begin{figure*}[h!]
-        \centering
-        \includegraphics[width=0.5\textwidth]{../Images/charge-stability-coulomb-diamonds.png}
-        \caption{Charge stability diagram also known as Coulomb diamonds.}
-    \end{figure*}
+          \begin{figure*}[h!]
+              \centering
+              \includegraphics[width=0.5\textwidth]{../Images/charge-stability-coulomb-diamonds.png}
+              \caption{Charge stability diagram also known as Coulomb diamonds.}
+          \end{figure*}
     \item Gates are even used now to even shift the latter of the energy levels in the dot on top of also the source and drain gates. So that is how we get the Source/Drain gate voltage vs Gate voltage (on the dot) Coulomb diamond plot.
     \item At the degeneracy points, the energy cost for N and N+1 electrons is the same.
     \item On the lines, either the source or drain chemical potential is aligned with a dot chemical potential.
@@ -88,7 +88,22 @@
     \item Slope of lines tells you about the coupling capacitancebetween the source/drain/gate and the island.
     \item You can also figure out the charging energy of the capacitor by looking how stretched from a square diamond it is (compare width and height from centre of diamond). Conversion factor to figure out how much gate voltage needs to be applied to overcome the charging energy.
     \item Gate traces and stability diagrams are used to characterize quantum dots. Inside the coulomb diamonds, the number of electrons on the island is fixed and no current flows. Outside the Coulomg islands, the number of electrons fluctuates and current flows.
-    \item A low-bias gate trace shows peaks in conductance each time the number of electrons on the dot changes by one. 
+    \item A low-bias gate trace shows peaks in conductance each time the number of electrons on the dot changes by one.
     \item Asymmetric coupling: Coulomb staircase (Matsumoto et al. Appl. Phys. Lett. 68, 34, 1996).
-    \item 
+    \item Paper example with coulomb diamond: \href{https://pubs.aip.org/aip/apl/article-abstract/83/10/2052/115649/Single-electron-transistors-in-heterostructure}{"Single-electron transistors in heterostructure nanowires" by C. Thelander et al, Appl. Phys. Lett. 83, 2052 (2003) }
+    \item Temperature effects: as temperature increases, the peaks become oscillations until they eventually disappear.
+    \item FWHM of a conductance peak can be used to estimate the electron temperature in the device. There is a quantum and classical equation for this.
+    \item Remember: electron temperature does not need to equal the fridge temperature (insufficient electron-phonon coupling). Must use wire design and filtering to reduce noise and heating and cool electrons.
+    \item Paper shows off-set charges in coulomb diamond diagram: \href{https://pubs.aip.org/aip/apl/article-abstract/84/16/3154/523467/Metal-nanoparticle-single-electron-transistors?redirectedFrom=fulltext}{"Metal-nanoparticle single electron transistors fabricated using electromigration" by K.I. Bolotin et al, Appl. Phys. Lett. 84, 3154 (2004)}
+    \item Can get random sudden offset charges in the environment that shift the coulomb diamonds.
+    \item This is paves the way to charge sensing.
+    \item QPC (or another QD or SET) can be used as detector for charge in quantum dot.
+    \item Tune QPC to slope between conductance plateaus. Change in charge on dot changes potential landscape and hence conductance of QPC.
+    \item SET applications: sensitive charge ($10^{-5} e/\sqrt{Hz}$), readout of charge qubits, readout of spin qubits (via spin-to-charge conversion), current standard (turnstile)
+    \item Single-electron logic and memory devices (\href{https://intra.ece.ucr.edu/~korotkov/papers/IJE-86-511-1999.pdf}{Alexander Korotkov 1999}). Issues: random offset charges, and room temp operation.
+    \item Single-electron turnstile: AC pulse gates at fixed frequency to get current standard $I = ef$. NIST standard: 1 part in $10^8$ which is better than what the turnstiles can do.
+    \item Room temp silicon SET (coulomb diamonds not very reproducible so can't be used in our normal computers): \href{https://pubs.aip.org/aip/apl/article-abstract/72/10/1205/518699/Silicon-single-electron-quantum-dot-transistor?redirectedFrom=fulltext}{Silicon single-electron quantum-dot transistor switch operating at room temperature by Lei Zhang et al, Appl. Phys. Lett. 1998}
+    \item Cotunneling (2nd order perturbation theory): electron tunnels from source to higher level in dot, then to drain.
+    \item See \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.153402}{S. Sapmaz et al, Phys. Rev. B 71, 153402 (2005)} for cotunneling in carbon nanotube quantum dots.
+    \item See \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.93.256801}{D. Zumbuhl et al, PRL 93, 256801 (2004)} for cotunneling in GaAs quantum dots.
 \end{itemize}
