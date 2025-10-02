@@ -1,5 +1,4 @@
 ﻿# Ignore LaTeX build files
-# examples of files I don't want to track indent.log, notes.aux, notes.fdb_latexmk, notes.fls, notes.log, notes.out, notes.synctex.gz, notes.toc
 *.aux
 *.bbl
 *.blg
@@ -15,5 +14,12 @@
 *.nav
 *.snm
 # Explicit ignores for the generated notes files in lecture-notes
+# examples of files I don't want to track indent.log, notes.aux, notes.fdb_latexmk, notes.fls, notes.log, notes.out, notes.synctex.gz, notes.toc
 lecture-notes/indent.log
-lecture-notes/notes.*
+lecture-notes/notes.aux
+lecture-notes/notes.fdb_latexmk
+lecture-notes/notes.fls
+lecture-notes/notes.log
+lecture-notes/notes.out
+lecture-notes/notes.synctex.gz
+lecture-notes/notes.toc
