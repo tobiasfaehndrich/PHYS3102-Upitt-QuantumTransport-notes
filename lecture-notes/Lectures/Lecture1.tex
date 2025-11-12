@@ -1,79 +1,110 @@
+\ytset{https://www.youtube.com/watch?v=ATpC2Plbi8g&list=PLtTPtV8SRcxjedflXwNPSI_fxvxwUCjsd}
+
 \section[Introduction]{\hyperlink{toc}{Introduction}}
 
+\subsection{Course Overview}
+
 \begin{itemize}
-    \item Quantum transport is the study of how charged particles (like electrons) move through materials and devices.
+    \item Course Information:
+          \begin{itemize}
+              \item Instructor: Sergey Frolov, University of Pittsburgh, Spring 2013
+              \item Course structure includes homework assignments reviewing scientific papers and a final project proposing a new experiment
+              \item Experimentalist's perspective on quantum transport
+          \end{itemize}
+\end{itemize}
+
+\subsection{What is Quantum Transport?}
+
+\begin{itemize}
+    \item Quantum transport is the study of how charged particles (like electrons) move through materials and devices when they behave as quantum mechanical objects.
     \item To get our transport to behave quantum mechanically we can:
-    \begin{itemize}
-        \item shrink the size of our device to be comparable to the electron's wavelength (nanoscale devices)
-        \item cool the device to very low temperatures to reduce thermal vibrations (would want energy scale of wavefunction to be larger than the thermal energy)
-    \end{itemize}
+          \begin{itemize}
+              \item shrink the size of our device to be comparable to the electron's wavelength (nanoscale devices)
+              \item cool the device to very low temperatures to reduce thermal vibrations (would want energy scale of wavefunction to be larger than the thermal energy)
+          \end{itemize}
     \item metal–oxide–semiconductor field-effect transistor (MOSFET) cannot be made arbitrarily small because of quantum tunneling through the gate oxide layer (CMOS is the manufacturing process)
-    \begin{center}
-        \includegraphics[width = 0.8 \linewidth]{taxonomy.png}
-    \end{center}
+          \begin{center}
+              \includegraphics[width = 0.8 \linewidth]{taxonomy.png}
+          \end{center}
+\end{itemize}
+
+\subsection{Key Phenomena and Applications}
+
+\begin{itemize}
     \item Key phenomena in quantum transport include:
-        \begin{itemize}
-            \item Conductance quantization (ballistic transport in low-dimensional systems)
-            \item Quantum interference
-            \item Tunneling and Coulomb blockade
-            \item Mesoscopic superconductivity
-            \item Quantum bits (qubits)
-            \item Topological quantum phases
-        \end{itemize}
+          \begin{itemize}
+              \item Conductance quantization (ballistic transport in low-dimensional systems)
+              \item Quantum interference (e.g., Aharonov-Bohm effect)
+              \item Tunneling and Coulomb blockade
+              \item Mesoscopic superconductivity
+              \item Quantum bits (qubits)
+              \item Topological quantum phases
+          \end{itemize}
     \item Examples of new device concepts:
-    \begin{itemize}
-        \item quantum computing (superposition states used for qm algos with speedup over classical algos)
-        \item spintronics (intrinsic spin used for new logic devices)
-        \item optoelectronics (device to generate or detect radiation on single photon level)
-    \end{itemize}
-    \item Quantum of Charge: $e = 1.6 \times 10^{-19} C$
-    \item Quantum of Conductance: $G_0 = \frac{e^2}{h} = 3.87 \times 10^{-5} \Omega^{-1}$
-    \begin{figure}[h]
-        \includegraphics[width = 0.3 \linewidth]{conductance-quantization.png}
-        \centering
-        \caption{test}
-    \end{figure}
-    \item Quantum of Resistance: $R_0 = \frac{h}{e^2} = 25.8 k\Omega$
-    \begin{figure}[h] 
-        \includegraphics[width = 0.3 \linewidth]{quantum-hall-resistance.png}
-        \centering
-        \caption{Quantum Hall Effect: In a 2D electron gas subjected to a strong perpendicular magnetic field, the Hall resistance becomes quantized in integer multiples of $R_0$, leading to precisely defined resistance plateaus.}
-    \end{figure}
-    \item Quantum of Magnetic Flux: $\Phi_0 = \frac{e}{h} = 4.14 \times 10^{-15} \, \text{webers}$
-    \begin{figure}[h]
-        \includegraphics[width = 0.4 \linewidth]{aharonov-bohm-effect.png}
-        \centering
-        \caption{The Aharonov-Bohm effect: electrons traveling in a region with zero magnetic field can still be affected by a magnetic flux enclosed by their path, leading to observable phase shifts in their wavefunctions.}
-    \end{figure}
+          \begin{itemize}
+              \item quantum computing (superposition states used for qm algos with speedup over classical algos)
+              \item spintronics (intrinsic spin used for new logic devices)
+              \item optoelectronics (device to generate or detect radiation on single photon level)
+              \item advanced electronics leveraging quantum effects at the nanoscale
+          \end{itemize}
+\end{itemize}
 
+\subsection{Fundamental Quantum Constants}
+
+\begin{itemize}
+    \item Quantum of Charge: $e = 1.6 \times 10^{-19}$ C
+    \item Quantum of Conductance: $G_0 = \frac{e^2}{h} = 3.87 \times 10^{-5} \, \Omega^{-1}$
+          \begin{figure}[h]
+              \includegraphics[width = 0.3 \linewidth]{conductance-quantization.png}
+              \centering
+              \caption{Conductance quantization in quantum point contacts showing discrete steps in units of $G_0$.}
+          \end{figure}
+    \item Quantum of Resistance: $R_0 = \frac{h}{e^2} = 25.8 \, k\Omega$
+          \begin{figure}[h]
+              \includegraphics[width = 0.3 \linewidth]{quantum-hall-resistance.png}
+              \centering
+              \caption{Quantum Hall Effect: In a 2D electron gas subjected to a strong perpendicular magnetic field, the Hall resistance becomes quantized in integer multiples of $R_0$, leading to precisely defined resistance plateaus.}
+          \end{figure}
+    \item Quantum of Magnetic Flux: $\Phi_0 = \frac{h}{e} = 4.14 \times 10^{-15} \, \text{webers}$
+          \begin{figure}[h]
+              \includegraphics[width = 0.4 \linewidth]{aharonov-bohm-effect.png}
+              \centering
+              \caption{The Aharonov-Bohm effect: electrons traveling in a region with zero magnetic field can still be affected by a magnetic flux enclosed by their path, leading to observable phase shifts in their wavefunctions.}
+          \end{figure}
+\end{itemize}
+
+\subsection{Electron Physics}
+
+\begin{itemize}
     \item Basic electrons: mass $m_e$, charge e, spin 1/2
-    \begin{itemize}
-        \item PIAB
-        \item Waves in waveguides
-        \item Coulomb blockade
-        \item Zeeman effect
-    \end{itemize}
-    \item Electrons+interactions+bandstructure effects:
-    \begin{itemize}
-        \item Band structure effects $\rightarrow$ effect mass like 0.044 $m_e$ in GaAs (great that it is lower so that it has higher mobility and easier to get quantum effects) and 0 in graphene
-        \item electron-electron interaction $\rightarrow$ fractional quantum Hall effect, kondo effect (electron with spin on island, conduction electrons in leads screen the spin)
-        \item Hyperfine coupling $\rightarrow$ interaction with lattice nuclear spin "bath"
-        \item Spin-orbit coupling $\rightarrow$ (also a band structure effect) interaction with electric fields in a lattice, motion of electron through electric field is seen as magnetic field in electron's rest frame, couples to spin of electron (i.e. control of movement of electron can control its spin)
-        \item superconductivity $\rightarrow$ pairing of two electrons into (spin singlets called cooper pairs) a boson flow of supercurrent without resistance
-    \end{itemize}
+          \begin{itemize}
+              \item PIAB
+              \item Waves in waveguides
+              \item Coulomb blockade
+              \item Zeeman effect
+          \end{itemize}
+    \item Electrons + interactions + bandstructure effects:
+          \begin{itemize}
+              \item Band structure effects $\rightarrow$ effect mass like 0.044 $m_e$ in GaAs (great that it is lower so that it has higher mobility and easier to get quantum effects) and 0 in graphene
+              \item electron-electron interaction $\rightarrow$ fractional quantum Hall effect, kondo effect (electron with spin on island, conduction electrons in leads screen the spin)
+              \item Hyperfine coupling $\rightarrow$ interaction with lattice nuclear spin "bath"
+              \item Spin-orbit coupling $\rightarrow$ (also a band structure effect) interaction with electric fields in a lattice, motion of electron through electric field is seen as magnetic field in electron's rest frame, couples to spin of electron (i.e. control of movement of electron can control its spin)
+              \item superconductivity $\rightarrow$ pairing of two electrons into (spin singlets called cooper pairs) a boson flow of supercurrent without resistance
+          \end{itemize}
+\end{itemize}
 
+\subsection{Landmark Experiments}
+
+\begin{itemize}
     \item The quantum hall effect (2D): Si-MOSFET (Klaus von Klitzing 1980)  \href{https://doi.org/10.1103/PhysRevLett.45.494}{[Online]}
     \item Quantum point contacts: gates over 2DEG forms 1D channel in semiconductor heterostructure, apply source and drain bias and you measure quantized conductance (B.J. van Wees 1988)  \href{https://doi.org/10.1103/PhysRevLett.60.848}{[Online]}
-    \item Single spin, single shot readout: quantum dot in GaAs (Elzerman 2004)  \href{https://doi.org/10.1038/nature02693}{[Online]}
-    \item Single spin control with magnetic field (Koppens 2006)  \href{https://doi.org/10.1038/nature05065}{[Online]}
-    \item Coupling between two single spins (Petta 2005)  \href{https://doi.org/10.1126/science.1116955}{[Online]}
-    \item Superconducting Flux Qubit: Mooij 1999  \href{https://doi.org/10.1126/science.285.5430.1036}{[Online]}
-    \begin{itemize}
-        \item SQUID does the measurement of the flux qubit.
-    \end{itemize}
-
-
-    
+    \item Real-world experimental demonstrations (\ylink{39:40}):
+          \begin{itemize}
+              \item Single spin, single shot readout: quantum dot in GaAs (Elzerman 2004)  \href{https://doi.org/10.1038/nature02693}{[Online]}
+              \item Single spin control with magnetic field (Koppens 2006)  \href{https://doi.org/10.1038/nature05065}{[Online]}
+              \item Coupling between two single spins (Petta 2005)  \href{https://doi.org/10.1126/science.1116955}{[Online]}
+              \item Superconducting Flux Qubit: Mooij 1999  \href{https://doi.org/10.1126/science.285.5430.1036}{[Online]} (SQUID does the measurement of the flux qubit)
+          \end{itemize}
 \end{itemize}
 
 

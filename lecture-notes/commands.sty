@@ -20,6 +20,37 @@
 \usepackage{xcolor}         % Enables color customization in text and graphics
 \usepackage{float}          % Improves control over figure/table placement (e.g., [H] option to force exact position)
 \usepackage{hyperref}       % Adds clickable hyperlinks for references, citations, and URLs in the PDF
+\usepackage{xparse}
+\usepackage{xstring}
+
+% Set the YouTube base URL for the current lecture
+\newcommand{\ytset}[1]{\def\yt@base{#1}}
+
+% \ylink{time}[text] where time = ss | mm:ss | hh:mm:ss
+\NewDocumentCommand{\ylink}{m o}{%
+    \begingroup
+    \StrCount{#1}{:}[\yt@cols]%
+    \def\yt@sec{}%
+    \ifnum\yt@cols=2\relax
+        \StrBefore{#1}{:}[\yt@h]%
+        \StrBehind{#1}{:}[\yt@rest]%
+        \StrBefore{\yt@rest}{:}[\yt@m]%
+        \StrBehind{\yt@rest}{:}[\yt@s]%
+        \edef\yt@sec{\the\numexpr \yt@h*3600 + \yt@m*60 + \yt@s\relax}%
+    \else\ifnum\yt@cols=1\relax
+            \StrBefore{#1}{:}[\yt@m]%
+            \StrBehind{#1}{:}[\yt@s]%
+            \edef\yt@sec{\the\numexpr \yt@m*60 + \yt@s\relax}%
+        \else
+            \edef\yt@sec{#1}%
+        \fi\fi
+    \StrCount{\yt@base}{?}[\yt@q]%
+    \def\yt@sep{&}\ifnum\yt@q=0 \def\yt@sep{?}\fi
+    \href{\yt@base\yt@sep t=\yt@sec}{\IfNoValueTF{#2}{#1}{#2}}%
+    \endgroup
+}
+
+
 \usepackage{fullpage}       % Sets reasonable page margins (shrinks default LaTeX margins to fit more content)
 \usepackage{enumerate}      % Allows customization of numbered list labels (e.g., use (i), (a), etc.)
 \usepackage[breakable]{tcolorbox} % Allows colored and breakable text boxes (great for theorems, proofs, etc.)
@@ -50,8 +81,8 @@
 
 
 \hypersetup{colorlinks = true}
-\let\oldphi\phi 
-\let\phi\varphi 
+\let\oldphi\phi
+\let\phi\varphi
 \let\varphi\oldphi
 
 \newtcolorbox{defbox}[1]{colback=red!5!, colframe=red!75!black,fonttitle=\bfseries, title=Definition#1}
