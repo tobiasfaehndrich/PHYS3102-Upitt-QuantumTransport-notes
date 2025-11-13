@@ -13,6 +13,8 @@
 *.lot
 *.nav
 *.snm
+*.bcf
+*.run.xml
 # Explicit ignores for the generated notes files in lecture-notes
 lecture-notes/indent.log
 lecture-notes/notes.aux
