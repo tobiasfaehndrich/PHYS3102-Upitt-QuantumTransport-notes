@@ -16,19 +16,18 @@
               \item Carbon nanotubes (micron scale)
               \item Graphene quantum dots
           \end{itemize}
-    \item Few-electron quantum dots in nanowires \parencite{Bjork2004}
 \end{itemize}
 
 \subsection{Quantum Dots vs Classical SETs}
-
 \begin{itemize}
+    \item Few-electron quantum dots in nanowires \parencite{Bjork2004}
     \item Classical dots: regular spacing of conductance peaks (\ylink{4:27}).
     \item Quantum dots: irregular peak spacing due to additional orbital energy.
     \item Addition energy includes both charging energy and quantum (orbital) energy (\ylink{6:30}).
     \item Current-voltage characteristics (\ylink{10:48}):
           \begin{itemize}
-              \item Classical SET: zero current until threshold voltage, then linear current flow
-              \item Quantum dot: step-like IV curve reflecting discrete level structure
+              \item Classical SET: zero current until threshold voltage, then linear current flow (because of continuous density of states)
+              \item Quantum dot: step-like IV curve reflecting discrete level structure (because of discrete density of states)
           \end{itemize}
 \end{itemize}
 
@@ -40,27 +39,45 @@
           \begin{figure}[H]
               \centering
               \includegraphics[width=0.5\linewidth]{../Images/coulomb-diamonds.png}
-              \caption{Coulomb diamonds illustrating shell filling in quantum dots.}
+              \caption{Coulomb diamonds illustrating shell filling in quantum dots \parencite{Kouwenhoven1997}.}
               \label{fig:coulomb-diamonds}
           \end{figure}
           \begin{itemize}
               \item Electrons occupy discrete energy levels
-              \item Behavior similar to artificial atoms \parencite{Kouwenhoven1997}
+              \item Behavior similar to artificial atoms.
               \item Characteristic patterns in stability diagrams
           \end{itemize}
+    \item Another example of Coulomb diamonds in a single-wall nanotube quantum dot (\ylink{20:45}).
+          \begin{figure}
+              \centering
+              \includegraphics[width=0.5\linewidth]{../Images/single-wall-nanotube-quantum-dot-sapmaz2005-4foldCDs.png}
+              \caption{Coulomb diamonds in a single-wall nanotube quantum dot \parencite{Sapmaz2005}.}
+              \label{fig:sapmaz-coulomb-diamonds}
+          \end{figure}
+          \begin{itemize}
+              \item 4 fold shell filling pattern due to spin and valley degeneracy (see \ref{fig:sapmaz-coulomb-diamonds}).
+          \end{itemize}
+
+    \item Another example of Coulomb diaonds in a single electron-hole quantum dot (\ylink{23:05}).
+          \begin{figure}
+              \centering
+              \includegraphics[width=0.5\linewidth]{../Images/e-h-sym-qd.png}
+              \caption{Coulomb diamonds in a single electron-hole quantum dot \parencite{Jarillo2004}.}
+              \label{fig:jarillo-coulomb-diamonds}
+          \end{figure}
 \end{itemize}
 
 \subsection{Magnetic Field Effects}
 
 \begin{itemize}
-    \item Effect of magnetic fields on quantum dot energy levels (\ylink{30:00}):
+    \item Effect of magnetic fields on quantum dot energy levels (\ylink{25:19}):
           \begin{itemize}
               \item Zeeman splitting
               \item Fock-Darwin spectrum
           \end{itemize}
 \end{itemize}
 
-\subsection{Excited States}
+\subsection{Level Spectroscopy: Excited States}
 
 \begin{itemize}
     \item Excited states analysis using higher bias measurements (\ylink{35:55}).
@@ -68,18 +85,59 @@
           \begin{itemize}
               \item Orbital states
               \item Spin states
-              \item Vibrational states
+              \item Vibrational states: e.g. vibration assisted tunnelling in a C60 transistor \parencite{Park2000}
           \end{itemize}
+
+          \begin{figure}
+              \centering
+              \includegraphics[width=0.9\linewidth]{../Images/review-coulomb-diamonds-highbias.png}
+              \caption{Excited states in a quantum dot \parencite{Hanson2007}.}
+              \label{fig:excited-states-qd}
+          \end{figure}
+
 \end{itemize}
 
 \subsection{Double Quantum Dots}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\linewidth]{../Images/double-dot-picture-device-example.png}
+    \caption{SEM image of a double quantum dot device.}
+    \label{fig:double-quantum-dot-sem}
+\end{figure}
+
 \begin{itemize}
-    \item Electrostatics of double quantum dots.
-    \item Honeycomb charge stability diagrams (\ylink{50:39}).
-    \item Enable study of:
+    \item Electrostatics of double quantum dots \parencite{vanderWiel2002,Hanson2007} see \ref{fig:double-quantum-dot-schematic}.
+
+          \begin{figure}
+              \centering
+              \includegraphics[width=0.7\linewidth]{../Images/double-dot-circuit-diagram-vanderwiel2002.png}
+              \caption{Schematic of a double quantum dot system \parencite{vanderWiel2002}}
+              \label{fig:double-quantum-dot-schematic}
+          \end{figure}
+
+
+    \item Honeycomb charge stability diagrams (\ylink{56:00}) see \ref{fig:double-quantum-dot-honeycomb}.
+          \begin{figure}
+              \centering
+              \includegraphics[width=0.5\linewidth]{../Images/CSD-double-dot-coupling-vanderWiel2002.png}
+              \caption{Honeycomb charge stability diagram of a double quantum dot \parencite{vanderWiel2002}.}
+              \label{fig:double-quantum-dot-honeycomb}
+          \end{figure}
           \begin{itemize}
-              \item Very narrow transitions
-              \item Co-tunneling processes (\ylink{1:02:42})
+              \item Now conduction only happens at Triple points: points where three charge states are degenerate \parencite{Pothier1992}
+              \item You can use the Stoof and Nazarov model to extract tunnel rates and inter-dot coupling from these triangles \parencite{Stoof1996}
+                    \begin{equation}
+                        I(\epsilon) = \frac{e}{h} \frac{\Gamma_R |T_{LR}|^2}{\epsilon^2 + \Gamma_R^2/4 + |T_{LR}|^2 (2 + \Gamma_R/\Gamma_L)}
+                    \end{equation}
           \end{itemize}
+
+    \item DQDs enable study of:
+          \begin{itemize}
+              \item Distinguishing from single quantum dot, here we two latters of discrete quantum states and the tunnel coupling is only determined by the inner transition without the effects of the outer thermally broadened leads \parencite{Kouwenhoven1995,VanderVaart1995}
+              \item Much more sensitive to very narrow transitions
+              \item Co-tunneling processes
+              \item Finite bias triangles: regions of allowed transport under finite bias (\ylink{1:05:19})
+          \end{itemize}
+    \item Can also make triple quantum dots but then the stability diagram becomes 3D \parencite{Schroeder2007}.
 \end{itemize}
